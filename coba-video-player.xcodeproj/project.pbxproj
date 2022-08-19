@@ -14,7 +14,6 @@
 		A570868728ADC8DD006F0487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A570868528ADC8DD006F0487 /* LaunchScreen.storyboard */; };
 		A570869028ADC964006F0487 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = A570868F28ADC964006F0487 /* Inject */; };
 		A570869228ADC9CF006F0487 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570869128ADC9CF006F0487 /* VideoView.swift */; };
-		A570869728AF24D3006F0487 /* example.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A570869628AF24D3006F0487 /* example.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		A570868628ADC8DD006F0487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A570868828ADC8DD006F0487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A570869128ADC9CF006F0487 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		A570869628AF24D3006F0487 /* example.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				A570867C28ADC8D9006F0487 /* SceneDelegate.swift */,
 				A570867E28ADC8D9006F0487 /* VideoViewController.swift */,
 				A570869128ADC9CF006F0487 /* VideoView.swift */,
-				A570869628AF24D3006F0487 /* example.mp4 */,
 				A570868328ADC8DD006F0487 /* Assets.xcassets */,
 				A570868528ADC8DD006F0487 /* LaunchScreen.storyboard */,
 				A570868828ADC8DD006F0487 /* Info.plist */,
@@ -137,7 +134,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A570868728ADC8DD006F0487 /* LaunchScreen.storyboard in Resources */,
-				A570869728AF24D3006F0487 /* example.mp4 in Resources */,
 				A570868428ADC8DD006F0487 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
