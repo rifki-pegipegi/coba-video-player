@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		A570867B28ADC8D9006F0487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570867A28ADC8D9006F0487 /* AppDelegate.swift */; };
 		A570867D28ADC8D9006F0487 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570867C28ADC8D9006F0487 /* SceneDelegate.swift */; };
-		A570867F28ADC8D9006F0487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570867E28ADC8D9006F0487 /* ViewController.swift */; };
-		A570868228ADC8D9006F0487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A570868028ADC8D9006F0487 /* Main.storyboard */; };
+		A570867F28ADC8D9006F0487 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570867E28ADC8D9006F0487 /* VideoViewController.swift */; };
 		A570868428ADC8DD006F0487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A570868328ADC8DD006F0487 /* Assets.xcassets */; };
 		A570868728ADC8DD006F0487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A570868528ADC8DD006F0487 /* LaunchScreen.storyboard */; };
+		A570869028ADC964006F0487 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = A570868F28ADC964006F0487 /* Inject */; };
+		A570869228ADC9CF006F0487 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570869128ADC9CF006F0487 /* VideoView.swift */; };
+		A570869728AF24D3006F0487 /* example.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A570869628AF24D3006F0487 /* example.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A570867728ADC8D9006F0487 /* coba-video-player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coba-video-player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A570867A28ADC8D9006F0487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A570867C28ADC8D9006F0487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A570867E28ADC8D9006F0487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A570868128ADC8D9006F0487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A570867E28ADC8D9006F0487 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		A570868328ADC8DD006F0487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A570868628ADC8DD006F0487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A570868828ADC8DD006F0487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A570869128ADC9CF006F0487 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		A570869628AF24D3006F0487 /* example.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A570869028ADC964006F0487 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +62,9 @@
 			children = (
 				A570867A28ADC8D9006F0487 /* AppDelegate.swift */,
 				A570867C28ADC8D9006F0487 /* SceneDelegate.swift */,
-				A570867E28ADC8D9006F0487 /* ViewController.swift */,
-				A570868028ADC8D9006F0487 /* Main.storyboard */,
+				A570867E28ADC8D9006F0487 /* VideoViewController.swift */,
+				A570869128ADC9CF006F0487 /* VideoView.swift */,
+				A570869628AF24D3006F0487 /* example.mp4 */,
 				A570868328ADC8DD006F0487 /* Assets.xcassets */,
 				A570868528ADC8DD006F0487 /* LaunchScreen.storyboard */,
 				A570868828ADC8DD006F0487 /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "coba-video-player";
+			packageProductDependencies = (
+				A570868F28ADC964006F0487 /* Inject */,
+			);
 			productName = "coba-video-player";
 			productReference = A570867728ADC8D9006F0487 /* coba-video-player.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = A570866E28ADC8D9006F0487;
+			packageReferences = (
+				A570868E28ADC963006F0487 /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = A570867828ADC8D9006F0487 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A570868728ADC8DD006F0487 /* LaunchScreen.storyboard in Resources */,
+				A570869728AF24D3006F0487 /* example.mp4 in Resources */,
 				A570868428ADC8DD006F0487 /* Assets.xcassets in Resources */,
-				A570868228ADC8D9006F0487 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A570867F28ADC8D9006F0487 /* ViewController.swift in Sources */,
+				A570869228ADC9CF006F0487 /* VideoView.swift in Sources */,
+				A570867F28ADC8D9006F0487 /* VideoViewController.swift in Sources */,
 				A570867B28ADC8D9006F0487 /* AppDelegate.swift in Sources */,
 				A570867D28ADC8D9006F0487 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A570868028ADC8D9006F0487 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A570868128ADC8D9006F0487 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A570868528ADC8DD006F0487 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,12 +296,13 @@
 				INFOPLIST_FILE = "coba-video-player/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"-Xlinker",
+					"-interposable",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.widdsss.coba-video-player";
@@ -320,7 +325,6 @@
 				INFOPLIST_FILE = "coba-video-player/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A570868E28ADC963006F0487 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A570868F28ADC964006F0487 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A570868E28ADC963006F0487 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A570866F28ADC8D9006F0487 /* Project object */;
 }
