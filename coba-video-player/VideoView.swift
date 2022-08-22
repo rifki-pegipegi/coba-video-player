@@ -6,8 +6,19 @@
 //
 
 import UIKit
+import AVKit
+import YouTubeiOSPlayerHelper
 
 class VideoView: UIView {
+
+    let url: String?
+
+    required init(url: String) {
+        self.url = url
+        super.init(frame: CGRect.zero)
+        self.backgroundColor = .white
+        setupView()
+    }
 
     lazy var videoPlayer: UIView = {
         let video = UIView()
@@ -15,31 +26,37 @@ class VideoView: UIView {
         return video
     } ()
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = .white
-        setupView()
-
-    }
+    lazy var yTvideoPlayer: YTPlayerView = {
+        let video = YTPlayerView()
+        return video
+    } ()
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     func setupView() {
-        setupLayoutVideoPlayer()
+        guard let url = url else { return }
+
+        if url.contains("youtube") || url.contains("youtu.be") {
+            setupLayoutVideoPlayer(view: yTvideoPlayer)
+        } else {
+            setupLayoutVideoPlayer(view: videoPlayer)
+        }
+
 
     }
 
-    func setupLayoutVideoPlayer() {
-        self.addSubview(videoPlayer)
-        videoPlayer.translatesAutoresizingMaskIntoConstraints = false
+
+    func setupLayoutVideoPlayer(view: UIView) {
+        self.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            videoPlayer.topAnchor.constraint(equalTo: self.topAnchor),
-            videoPlayer.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            videoPlayer.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            videoPlayer.heightAnchor.constraint(equalToConstant: 300)
+            view.topAnchor.constraint(equalTo: self.topAnchor),
+            view.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            view.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            view.heightAnchor.constraint(equalToConstant: 300)
         ])
 
     }

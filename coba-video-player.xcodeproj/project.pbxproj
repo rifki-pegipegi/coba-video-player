@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5357F6E28B34BDE00CD8A08 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = A5357F6D28B34BDE00CD8A08 /* YouTubeiOSPlayerHelper */; };
 		A570867B28ADC8D9006F0487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570867A28ADC8D9006F0487 /* AppDelegate.swift */; };
 		A570867D28ADC8D9006F0487 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570867C28ADC8D9006F0487 /* SceneDelegate.swift */; };
 		A570867F28ADC8D9006F0487 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570867E28ADC8D9006F0487 /* VideoViewController.swift */; };
@@ -14,6 +15,7 @@
 		A570868728ADC8DD006F0487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A570868528ADC8DD006F0487 /* LaunchScreen.storyboard */; };
 		A570869028ADC964006F0487 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = A570868F28ADC964006F0487 /* Inject */; };
 		A570869228ADC9CF006F0487 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570869128ADC9CF006F0487 /* VideoView.swift */; };
+		A570869B28AFB3E1006F0487 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A570869A28AFB3E1006F0487 /* CustomCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		A570868628ADC8DD006F0487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A570868828ADC8DD006F0487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A570869128ADC9CF006F0487 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		A570869A28AFB3E1006F0487 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A570869028ADC964006F0487 /* Inject in Frameworks */,
+				A5357F6E28B34BDE00CD8A08 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				A570867A28ADC8D9006F0487 /* AppDelegate.swift */,
 				A570867C28ADC8D9006F0487 /* SceneDelegate.swift */,
 				A570867E28ADC8D9006F0487 /* VideoViewController.swift */,
+				A570869A28AFB3E1006F0487 /* CustomCollectionViewController.swift */,
 				A570869128ADC9CF006F0487 /* VideoView.swift */,
 				A570868328ADC8DD006F0487 /* Assets.xcassets */,
 				A570868528ADC8DD006F0487 /* LaunchScreen.storyboard */,
@@ -87,6 +92,7 @@
 			name = "coba-video-player";
 			packageProductDependencies = (
 				A570868F28ADC964006F0487 /* Inject */,
+				A5357F6D28B34BDE00CD8A08 /* YouTubeiOSPlayerHelper */,
 			);
 			productName = "coba-video-player";
 			productReference = A570867728ADC8D9006F0487 /* coba-video-player.app */;
@@ -118,6 +124,7 @@
 			mainGroup = A570866E28ADC8D9006F0487;
 			packageReferences = (
 				A570868E28ADC963006F0487 /* XCRemoteSwiftPackageReference "Inject" */,
+				A5357F6C28B34BDE00CD8A08 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = A570867828ADC8D9006F0487 /* Products */;
 			projectDirPath = "";
@@ -147,6 +154,7 @@
 			files = (
 				A570869228ADC9CF006F0487 /* VideoView.swift in Sources */,
 				A570867F28ADC8D9006F0487 /* VideoViewController.swift in Sources */,
+				A570869B28AFB3E1006F0487 /* CustomCollectionViewController.swift in Sources */,
 				A570867B28ADC8D9006F0487 /* AppDelegate.swift in Sources */,
 				A570867D28ADC8D9006F0487 /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +368,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A5357F6C28B34BDE00CD8A08 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		A570868E28ADC963006F0487 /* XCRemoteSwiftPackageReference "Inject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
@@ -371,6 +387,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A5357F6D28B34BDE00CD8A08 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5357F6C28B34BDE00CD8A08 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
 		A570868F28ADC964006F0487 /* Inject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A570868E28ADC963006F0487 /* XCRemoteSwiftPackageReference "Inject" */;
